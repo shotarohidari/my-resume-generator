@@ -1,0 +1,33 @@
+h1 {
+    margin:0;
+}
+
+table {
+    width:100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    th,td {
+        border: 1px dashed black;
+        padding: 0.5rem;
+    }
+    th {
+        background-color: #d6ecd4;
+    }
+    text-align: center;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.center-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    /* あまりクラス名に依存させたくない */
+    .stack {
+        flex-basis: 60vw;
+    }
+}
